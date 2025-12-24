@@ -96,6 +96,6 @@ body {
     }
     .products {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;     
     }
 }
