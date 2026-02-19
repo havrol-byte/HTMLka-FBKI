@@ -1,0 +1,21 @@
+.pic{
+    width:400px;
+}
+
+.one {
+    filter: grayscale(100%);
+}
+
+.to {
+    filter: blur(2px);
+}
+
+.thrd {
+    filter: saturate(30%);
+}
+
+.fors {
+    filter: hue-rotate(1deg) saturate(1500%);
+    box-shadow: 8px 8px 2px 0px blue,
+    16px 24px 16px 6px greenyellow;
+}
