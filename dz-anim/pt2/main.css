@@ -1,0 +1,56 @@
+@keyframes gear-animation{
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes swing-anim {
+    0% {
+        rotate: -30deg;
+    }
+    50% {
+        rotate: 30deg;
+    }
+    100% {
+        rotate: -30deg;  
+    }
+}
+
+.swing {
+    transform-origin: top center;
+    animation: swing-anim linear 2s infinite;
+    position: absolute;
+    left: 38%;
+    top: 45%;
+}
+
+.watch {
+    width: 25%;
+    position: absolute;
+    left: 32.5%;
+    top: 15%;
+    z-index: -1;
+}
+
+.gear {
+    position: absolute;
+    animation: gear-animation linear 1s infinite;
+}
+
+.first {
+    animation-duration: 2.5s;
+    top: 43%;
+    left: 44%;
+    width: 10%;
+}
+
+.sec {
+    animation-duration: 3.75s;
+    animation-direction: reverse;
+    width: 15%;
+    top: 50%;
+    left: 33%;
+}

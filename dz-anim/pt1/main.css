@@ -1,0 +1,62 @@
+body {
+    background-image: url(img/ocean.jpg);
+    background-repeat: no-repeat;
+}
+
+@keyframes animation-boat {
+    from {
+        left: -10%;
+    }
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes animation-oblka {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 100%; 
+    }
+}
+
+@keyframes opa-pti4ka {
+    from {
+        left: 0;
+        top: 10%;
+    }
+    50% {
+        top: 90%;
+        left: 45%;
+    }
+    to {
+        left: 90%;
+        rotate: 5045deg;
+        top: 10%
+    }
+}
+
+.bird {
+    position: absolute;
+    width: 15%;
+    animation: opa-pti4ka 15s ease-in-out 1s infinite;
+}
+
+
+.oblako-1 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 50px;
+    animation: animation-oblka;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.boat {
+    position: absolute;
+    top: 300px;
+    animation: animation-boat 15s linear 1s infinite;
+}
