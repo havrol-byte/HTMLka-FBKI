@@ -20,10 +20,11 @@
 }
 
 .swing {
+    width: 20%;
     transform-origin: top center;
     animation: swing-anim linear 2s infinite;
     position: absolute;
-    left: 38%;
+    left: 35%;
     top: 45%;
 }
 
