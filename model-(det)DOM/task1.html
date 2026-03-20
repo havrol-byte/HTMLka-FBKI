@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+</head>
+
+<body>
+	<div>Пользователи<p style="background-color: rgb(17, 37, 104); color: white;">Hello!!!</p></div> 
+	<ul class="my-list"> 
+	  <li id="first">Фёдор</li> 
+	  <li>Вероника</li> 
+	</ul>
+	<table id="myTable" border="1">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table> 
+	<script> 
+		let elem = document.createElement("p");
+		elem.innerHTML = "Hello!!!";
+		elem.style.backgroundColor = "#112568";
+		elem.style.color = "white";
+		console.log(elem);
+		let parentElem = document.querySelector("div");
+		parentElem.appendChild(elem);
+
+		let table = document.getElementById("myTable");
+		for (let i = 0; i < table.rows.length; i++) {
+		table.rows[i].cells[i].style.backgroundColor = "yellow";
+		}
+
+		let list = document.querySelector(".my-list");
+		let secondItem = list.children[1];
+		console.log(secondItem);		
+	</script> 
+
+
+</body></html>

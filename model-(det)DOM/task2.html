@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2</title>
+</head>
+
+<body>
+
+  <form name="search">
+    <label>Поиск по сайту:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Искать!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Поиск по посетителям:
+    <table id="age-table" border="1">
+      <tr>
+        <td>Возраст:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">до 18
+          </label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50
+          </label>
+          <label>
+            <input type="radio" name="age" value="senior">более 50
+          </label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Дополнительно:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+    </table>
+
+    <input type="submit" value="Искать!">
+  </form>
+
+  <script>
+    let labels = document.querySelectorAll("#age-table label");
+    console.log("1:", labels);
+
+    let firstCell = document.querySelector("#age-table td");
+    console.log("2:", firstCell);
+
+    let secondForm = document.forms[1];
+    console.log("3:", secondForm);
+
+    let searchForm = document.forms["search"];
+    console.log("4:", searchForm);
+
+    let firstInput = searchForm.querySelector("input");
+    console.log("5:", firstInput);
+
+    let info0 = document.querySelector('[name="info[0]"]');
+    console.log("6:", info0);
+
+    let infoInForm = document.forms["search-person"]
+      .querySelector('[name="info[0]"]');
+    console.log("7:", infoInForm);
+  </script>
+
+</body>
+</html>
