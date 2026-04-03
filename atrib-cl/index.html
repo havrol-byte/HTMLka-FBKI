@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Мои любимые игры</h2>
+        <ul class="my-list" id="list">
+            <li>Cyberpunk 2077</li>
+            <li>Warcraft 3</li>
+            <li>Roblox</li>
+            <li>Cry of Fear</li>
+        </ul>
+    </div>
+
+    <script>
+        let title = document.getElementById("title");
+        let list = document.getElementById("list");
+
+        title.addEventListener("click", function() {
+            list.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
