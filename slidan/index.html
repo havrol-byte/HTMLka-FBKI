@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный слайдер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="slider">
+    <div class="top">
+      <h1>Книжный магазин</h1>
+
+      <div class="buttons">
+        <button class="btn" id="prevBtn" type="button" aria-label="Предыдущие книги">
+          &#8592;
+        </button>
+        <button class="btn" id="nextBtn" type="button" aria-label="Следующие книги">
+          &#8594;
+        </button>
+      </div>
+    </div>
+
+    <div class="window">
+      <div class="track" id="sliderTrack">
+        <article class="slide">
+          <img
+            src="img/1984.webp"
+            alt="Обложка книги 1984"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          >
+          <div class="info">
+            <p class="genre">Антиутопия</p>
+            <h2>1984</h2>
+            <p class="author">Джордж Оруэлл</p>
+            <p class="price">790 ₽</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img
+            src="img/mp.webp"
+            alt="Обложка книги Маленький принц"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="info">
+            <p class="genre">Сказка</p>
+            <h2>Маленький принц</h2>
+            <p class="author">Антуан де Сент-Экзюпери</p>
+            <p class="price">650 ₽</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img
+            src="img/mm.webp"
+            alt="Обложка книги Мастер и Маргарита"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="info">
+            <p class="genre">Роман</p>
+            <h2>Мастер и Маргарита</h2>
+            <p class="author">Михаил Булгаков</p>
+            <p class="price">920 ₽</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img
+            src="img/wp.webp"
+            alt="Обложка книги Война и мир"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="info">
+            <p class="genre">Роман-эпопея</p>
+            <h2>Война и мир</h2>
+            <p class="author">Лев Толстой</p>
+            <p class="price">950 ₽</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img
+            src="img/hp.webp"
+            alt="Обложка книги Гарри Поттер"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="info">
+            <p class="genre">Фэнтези</p>
+            <h2>Гарри Поттер</h2>
+            <p class="author">Дж. К. Роулинг</p>
+            <p class="price">990 ₽</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
